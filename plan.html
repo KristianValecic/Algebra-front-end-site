@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Algebra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/Algebra-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="jquery-ui-1.13.1.custom/jquery-ui.css">
+    <script src="JQuery\jquery.js" charset="utf-8"></script>
+    <script src="jquery-ui-1.13.1.custom\jquery-ui.js" charset="utf-8"></script>
+    <script src="forma.js" charset="utf-8"></script>
+    <script src="kolegiji.js" charset="utf-8"></script>
+    <script src="nav.js" charset="utf-8" defer></script>
+  </head>
+  <body>
+    <div id="mobileNav">
+      <img src="img\Algebra-logo.png" alt="Algebra Logo" id="LogoImg">
+      <button aria-controls="navbar" type="button" id="navBtn"></button>
+    </div>
+    <nav id="navbar" data-visible="false">
+      <div id="MainMenu">
+        <img src="img\Algebra-logo.png" alt="Algebra Logo">
+          <ul id="links">
+            <li><a href="pocetna.html">Početna</a></li>
+            <li><a href="onama.html">O nama</a></li>
+            <li><a href="novosti.html">Novosti</a></li>
+            <li><a href="plan.html">Nastavni plan</a></li>
+            <li><a id="FormaNav">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+    <div id="FormaContainer" >
+      <form id="Forma" action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="get">
+        <h1>Kontaktirajte nas</h1>
+        <label for="name">Puno ime:</label>
+        <input type="text" name="name" id="name">
+
+        <label for="email">E-mial:</label>
+        <input type="email" name="email" id="email">
+
+        <label for="importance">Važnost poruke:</label>
+        <select name="importance" id="vaznost">
+          <option value="visoka">Visoka</option>
+          <option value="niska">Niska</option>
+        </select>
+
+        <label for="message">Vaša Poruka:</label>
+        <textarea name="message" rows="8" cols="60" id="message"></textarea>
+
+        <label for="newsletter" id="newsletterLabel">Primajte newsletter</label>
+        <input type="checkbox" name="newsletter" id="newsletter">
+        <br>
+        <input type="submit" value="Prihvati" id="prihvati">
+        <button type="button" name="button" id="odustani">Odustani</button>
+      </form>
+  </div>
+
+    <div id="PlanHeaderContainer">
+      <h1 class="Naslov1" id="PlanHeader">Nastavni plan</h1>
+    </div>
+    <div id="PlanContent" >
+      <div id="searchbar">
+        <label for="KolegijInput">Naziv kolegija:</label>
+        <input type="text" name="KolegijInput" placeholder="Zapocnite unos naziva kolegija...">
+      </div>
+      <table id="tablicaKolegija">
+        <tr id="tableHeadPlan">
+          <th>Kolegij</th>
+          <th>ECTS</th>
+          <th>Sati</th>
+          <th>P</th>
+          <th>V</th>
+          <th>Tip</th>
+          <th></th>
+        </tr>
+        <tr id="SumaPlan">
+          <th>Ukupno:</th>
+          <th id="ECTSContainer"></th>
+          <th id="SatiContainer"></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </table>
+    </div>
+
+    <footer>
+      <h3>budi izvrstan u onom sto voliš <span>zaiskri</span></h3>
+    </footer>
+  </body>
+</html>

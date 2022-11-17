@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Algebra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/Algebra-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <script src="JQuery\jquery.js" charset="utf-8"></script>
+    <script src="forma.js" charset="utf-8"></script>
+    <script src="nav.js" charset="utf-8" defer></script>
+  </head>
+  <body>
+    <div id="mobileNav">
+      <img src="img\Algebra-logo.png" alt="Algebra Logo" id="LogoImg">
+      <button aria-controls="navbar" type="button" id="navBtn"></button>
+    </div>
+    <nav id="navbar" data-visible="false">
+      <div id="MainMenu">
+        <img src="img\Algebra-logo.png" alt="Algebra Logo">
+          <ul id="links">
+            <li><a href="pocetna.html">Početna</a></li>
+            <li><a href="onama.html">O nama</a></li>
+            <li><a href="novosti.html">Novosti</a></li>
+            <li><a href="plan.html">Nastavni plan</a></li>
+            <li><a id="FormaNav">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+    <div id="FormaContainer">
+      <form id="Forma" action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="get">
+        <h1>Kontaktirajte nas</h1>
+        <label for="name">Puno ime:</label>
+        <input type="text" name="name" id="name">
+
+        <label for="email">E-mial:</label>
+        <input type="email" name="email" id="email">
+
+        <label for="importance">Važnost poruke:</label>
+        <select name="importance" id="vaznost">
+          <option value="visoka">Visoka</option>
+          <option value="niska">Niska</option>
+        </select>
+
+        <label for="message">Vaša Poruka:</label>
+        <textarea name="message" rows="8" cols="60" id="message"></textarea>
+
+        <label for="newsletter" id="newsletterLabel">Primajte newsletter</label>
+        <input type="checkbox" name="newsletter" id="newsletter">
+        <br>
+        <input type="submit" value="Prihvati" id="prihvati">
+        <button type="button" name="button" id="odustani">Odustani</button>
+      </form>
+  </div>
+
+      <div class="headerImgContainer" id="Novost3Header"></div>
+      <div class="NovostContainer">
+        <div class="NovostHeaderContainer">
+          <h1 class="Naslov1">Digitalno Juinor ljeto.</h1>
+        </div>
+        <div class="NovostText">
+          <p>                     Algebra Junior organizira edukativne i zabavne ljetne
+                                  praznike za sve osnovnoškolce! I ove smo godine
+                                  pripremili digitalne radionice za djecu čiji je fokus
+                                  rješavanja raznih problema korištenjem tehnologije,
+                                  multimedije, digitalnog dizajna i komunikacija te
+                                  stvaranju sadržaja u svim multimedijskim i softverskim
+                                  oblicima. Radionice se održavaju u sklopu Digitalnog
+                                  ljetnog kampa u Crikvenici i Digitalne ljetne škole u
+                                  Zagrebu kako bismo se družili, zabavljali i učili i na
+                                  moru i na kontinentu! Na digitalnom kampu i u školi
+                                  provodit će se dva različita programa koji su
+                                  namijenjena djeci od 1. do 8. razreda. Ovisno o
+                                  odabranom terminu, polaznici će prolaziti kroz 1. ili 2.
+                                  program, a u slučaju pohađanja dvotjednih programa –
+                                  oba. U prvom programu nađe nindže uče biti glazbeni
+                                  menadžeri dok su u drugom novinari i kreatori
+                                  informacija masovnih medija. Provjerite termine, cijene
+                                  i lokacije škole i kampa na sljedećem linku.</p>
+        </div>
+      </div>
+    <footer>
+      <h3>budi izvrstan u onom sto voliš <span>zaiskri</span></h3>
+    </footer>
+  </body>
+</html>

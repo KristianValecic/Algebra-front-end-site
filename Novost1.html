@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Algebra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/Algebra-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <script src="JQuery\jquery.js" charset="utf-8"></script>
+    <script src="lightbox.js" charset="utf-8"></script>
+    <script src="forma.js" charset="utf-8"></script>
+    <script src="nav.js" charset="utf-8" defer></script>
+  </head>
+  <body>
+    <div id="mobileNav">
+      <img src="img\Algebra-logo.png" alt="Algebra Logo" id="LogoImg">
+      <button aria-controls="navbar" type="button" id="navBtn"></button>
+    </div>
+    <nav id="navbar" data-visible="false">
+      <div id="MainMenu">
+        <img src="img\Algebra-logo.png" alt="Algebra Logo">
+          <ul id="links">
+            <li><a href="pocetna.html">Početna</a></li>
+            <li><a href="onama.html">O nama</a></li>
+            <li><a href="novosti.html">Novosti</a></li>
+            <li><a href="plan.html">Nastavni plan</a></li>
+            <li><a id="FormaNav">Kontakt</a></li>
+          </ul>
+        </div>
+      </nav>
+    <div id="FormaContainer">
+      <form id="Forma" action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="get">
+        <h1>Kontaktirajte nas</h1>
+        <label for="name">Puno ime:</label>
+        <input type="text" name="name" id="name">
+
+        <label for="email">E-mial:</label>
+        <input type="email" name="email" id="email">
+
+        <label for="importance">Važnost poruke:</label>
+        <select name="importance" id="vaznost">
+          <option value="visoka">Visoka</option>
+          <option value="niska">Niska</option>
+        </select>
+
+        <label for="message">Vaša Poruka:</label>
+        <textarea name="message" rows="8" cols="60" id="message"></textarea>
+
+        <label for="newsletter" id="newsletterLabel">Primajte newsletter</label>
+        <input type="checkbox" name="newsletter" id="newsletter">
+        <br>
+        <input type="submit" value="Prihvati" id="prihvati">
+        <button type="button" name="button" id="odustani">Odustani</button>
+      </form>
+  </div>
+
+      <div class="headerImgContainer" id="Novost1Header">
+        <h1 class="NovostImgHeader">Student Josip Stanešić 12. je sistemaš scijeta i dobitnik medalje izvrsnost</h1>
+      </div>
+      <div class="NovostContainer">
+        <div class="NovostHeaderContainer">
+          <h1 class="Naslov1">WorldSkills natjecanje - Kazan 2019.</h1>
+        </div>
+        <div class="NovostText">
+          <p>                        Nakon godinu dana priprema za natjecanje WorldSkills
+                                  Kazan 2019 na kojem je sudjelovalo 1300 natjecatelja iz
+                                  cijelog svijeta, trud se itekako isplatio. Josip,
+                                  student 3. godine preddiplomskog studija sistemskog
+                                  inženjerstva osvojio je 12. mjesto u vještini IT
+                                  Networks and System Administration te osvojio medalju
+                                  izvrsnosti! Čestitke Josipu ali i njegovim/našim
+                                  mentorima koji su ga pripremali za ovo natjecanje –
+                                  voditelju studija sistemskog inženjerstva Silviju
+                                  Papiću, voditelju katedre za operacijske sustave –
+                                  Vedranu Dakiću i asistentu na studiju sistemskog
+                                  inženjerstva – Jasminu Redžepagiću. Čestitke i našem
+                                  studentu 3.godine preddiplomskog studija programskog
+                                  inženjerstva Josipu Horvatu i mentoru voditelju katedre
+                                  za programsko inženjerstvo - Goranu Đambiću na osvojenom
+                                  16.mjestu u vještini IT Software Solutions for Business.</p>
+        </div>
+        <div class="NovostImgContainer">
+          <div id="Image1Container">
+            <img src="img/galerija1.jpg" alt="picture 1" id="Image1">
+          </div>
+          <div id="Image2Container">
+            <img src="img/galerija2.jpg" alt="picture 2" id="Image2">
+          </div>
+          <video width="400" controls>
+            <source src="video/worldskills.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+          </video>
+        </div>
+      </div>
+
+      <div id="lightbox">
+        <div id="exit">
+          <h1> X </h1>
+        </div>
+        <!-- <div id="LBBackgroundTop"></div> -->
+        <div class="lightboxImage" id="LBImage1">
+          <img src="img/galerija1.jpg" alt="picture 1">
+        </div>
+        <div class="lightboxImage" id="LBImage2">
+          <img src="img/galerija2.jpg" alt="picture 2">
+        </div>
+        <!-- <div id="LBBackgroundBottom"></div> -->
+        <div id="backArrow">
+          <h1> < </h1>
+        </div>
+        <div id="forwardArrow">
+          <h1> > </h1>
+        </div>
+      </div>
+
+    <footer>
+      <h3>budi izvrstan u onom sto voliš <span>zaiskri</span></h3>
+    </footer>
+  </body>
+</html>
